@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TinkerHub » Join the celebration of learning</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap");
+        @import url("https://api.fontshare.com/v2/css?f[]=general-sans@200,201,300,301,400,500,501,600,601,700,701&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+        /* Reset and base styles */
+        *, ::after, ::before {
+            box-sizing: border-box;
+            border: 0 solid #e5e7eb;
+        }
+
+        body {
+            margin: 0;
+            font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            line-height: 1.5;
+        }
+
+        /* Utility classes */
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* Layout */
+        .default {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #fff;
+            background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1440' height='1439' fill='none' viewBox='0 0 1440 1439'%3E%3Cpath stroke='url(%23a)' stroke-width='1.334' d='M-5-7.499V1432.83M37.677-7.499V1432.83M80.352-7.499V1432.83M123.029-7.499V1432.83M165.706-7.499V1432.83M208.382-7.499V1432.83M251.059-7.499V1432.83M293.735-7.499V1432.83M336.412-7.499V1432.83M379.088-7.499V1432.83M421.765-7.499V1432.83M464.441-7.499V1432.83M507.118-7.499V1432.83M549.794-7.499V1432.83M592.471-7.499V1432.83M635.147-7.499V1432.83M677.824-7.499V1432.83M720.5-7.499V1432.83M763.176-7.499l.001 1440.329M805.853-7.499V1432.83M848.529-7.499l.001 1440.329M891.206-7.499V1432.83M933.882-7.499V1432.83M976.559-7.499V1432.83M1019.24-7.499V1432.83M1061.91-7.499V1432.83M1104.59-7.499V1432.83M1147.26-7.499V1432.83M1189.94-7.499V1432.83M1232.62-7.499V1432.83M1275.29-7.499V1432.83M1317.97-7.499V1432.83M1360.65-7.499V1432.83M1403.32-7.499V1432.83M1446-7.499V1432.83M-.332 1437.5H1440M-.332 1394.82H1440M-.332 1352.15H1440M-.332 1309.47H1440M-.332 1266.79H1440M-.332 1224.12H1440M-.332 1181.44H1440M-.332 1138.76H1440M-.332 1096.09H1440M-.332 1053.41H1440M-.332 1010.74H1440M-.332 968.059H1440M-.332 925.382H1440M-.332 882.706H1440M-.332 840.03 1440 840.029M-.332 797.353H1440M-.332 754.677 1440 754.676M-.332 712H1440M-.332 669.324H1440M-.332 626.647H1440M-.332 583.971H1440M-.332 541.294H1440M-.332 498.618H1440M-.332 455.941H1440M-.332 413.265H1440M-.332 370.588H1440M-.332 327.912H1440M-.332 285.235H1440M-.332 242.559H1440M-.332 199.882H1440M-.332 157.206H1440M-.332 114.53 1440 114.529M-.332 71.853H1440M-.332 29.177H1440M-.332-13.5H1440'/%3E%3Cdefs%3E%3ClinearGradient id='a' x1='720.5' x2='720.5' y1='-13.5' y2='1320.11' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-opacity='.03'/%3E%3Cstop offset='1' stop-color='%23fff' stop-opacity='0'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E");
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+        }
+
+        /* Hero section */
+        .hero-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding-top: 120px;
+            position: relative;
+        }
+
+        @media (min-width: 768px) {
+            .hero-section {
+                height: 100vh;
+                padding-top: 0;
+            }
+        }
+
+        /* Typography */
+        .font-sf {
+            font-family: 'General Sans', sans-serif;
+        }
+
+        .font-instrument {
+            font-family: 'Instrument Serif', serif;
+        }
+
+        .font-anton {
+            font-family: 'Anton', sans-serif;
+        }
+
+        .bebas-neue-regular {
+            font-family: 'Bebas Neue', sans-serif;
+        }
+
+        /* Buttons */
+        .index-button {
+            position: fixed;
+            top: 28px;
+            left: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 100;
+            background-color: black;
+            color: white;
+            padding: 5px 17px;
+            font-size: 13px;
+            line-height: 43px;
+            height: 29px;
+            width: 63px;
+            text-transform: uppercase;
+        }
+
+        @media (min-width: 768px) {
+            .index-button {
+                left: 64px;
+                padding: 3px 21px;
+                font-size: 20px;
+                height: 50.371px;
+                width: 120.874px;
+            }
+        }
+
+        /* Add more styles as needed */
+
+    </style>
+</head>
+<body>
+    <div id="__nuxt">
+        <div class="default overflow-hidden bg-white hide-scrollbar">
+            <section class="hero-section">
+                <div class="flex justify-between w-full">
+                    <div>
+                        <!-- Left side content (placeholder) -->
+                    </div>
+                    
+                    <div class="w-full flex justify-center h-full items-center relative">
+                        <div class="flex flex-col justify-center max-w-[800px] mb-16 md:mb-0">
+                            <div class="flex w-full justify-center md:mb-5">
+                                <button class="index-button font-anton">
+                                    INDEX
+                                </button>
+                            </div>
+                            <div class="flex justify-center p-0 m-0">
+                                <span class="bebas-neue-regular text-[20px] lg:text-[40px] leading-normal tracking-[-1.2px] uppercase">
+                                    the space between
+                                </span>
+                            </div>
+                            <h3 class="font-sf text-center uppercase text-[70.16px] lg:text-[180px] leading-[57.357px] lg:leading-[147.155px] tracking-[-11.927px] lg:tracking-[-30.6px] font-normal relative">
+                                dream<span class="font-instrument leading-[57.357px] tracking-[-13.252px] lg:leading-[147.155px] lg:tracking-[-34px] text-[70.16px] lg:text-[200px] absolute top-7">&amp;</span><br>
+                                reality
+                            </h3>
+                            <p class="text-center font-general text-[14px] lg:text-xl mt-6 mb-6 px-6 md:px-0">
+                                TinkerHub Foundation is a community of tinkerers, makers &amp; students - working towards mapping and empowering people who share a passion to innovate.
+                            </p>
+                            <p class="text-center mt-2 text-xs md:text-sm font-general text-gray-600 hidden md:block">
+                                Registered as a non-profit organization under societies act XXI of 1860 ) Reg No KKD/CA/478/2016
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <!-- Right side content (placeholder) -->
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Additional sections would go here -->
+            
+        </div>
+    </div>
+    <script>
+        // Any necessary JavaScript would go here
+    </script>
+</body>
+</html>
